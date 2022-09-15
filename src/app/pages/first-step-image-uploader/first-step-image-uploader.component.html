@@ -1,0 +1,23 @@
+<p-toast position="bottom-right"></p-toast>
+
+<div class="mb-3">
+  <label for="formFile" class="form-label">
+    *Choose Your Image
+  </label>
+  <input 
+  class="form-control" 
+  type="file" 
+  id="formFile" 
+  (change)="onSelectImage($event)"
+  accept=".png, .jpg"
+  required>
+</div>
+
+<div class="container mt-3">
+  <div class="row justify-content-center align-items-end">
+    <button class="btn btn-primary" (click)="goToSecondStep()">
+      Go To Form
+    </button>
+  </div>
+</div>
+

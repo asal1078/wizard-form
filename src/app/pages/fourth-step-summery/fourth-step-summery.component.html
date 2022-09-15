@@ -1,0 +1,63 @@
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <img [src]="this.summeryModel.imageUrl" class="summery-image">
+        </div>
+        <div class="col-6">
+            <div class="container">
+                <div class="row justify-content-between summery-data-frame">
+                    <div class="col-5 summery-data-title">
+                        Phone Number :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.phoneNumber}}
+                    </div>
+                </div>
+                <div class="row justify-content-between summery-data-frame mt-2">
+                    <div class="col-5 summery-data-title">
+                        Source Of Fund :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.sourceOfFund}}
+                    </div>
+                </div>
+                <div class="row justify-content-between summery-data-frame mt-2">
+                    <div class="col-5 summery-data-title">
+                        From :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.minDate}}
+                    </div>
+                </div>
+                <div class="row justify-content-between summery-data-frame mt-2">
+                    <div class="col-5 summery-data-title">
+                        To :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.maxDate}}
+                    </div>
+                </div>
+                <div class="row justify-content-between summery-data-frame mt-2">
+                    <div class="col-5 summery-data-title">
+                        Status :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.status.lable}}
+                    </div>
+                </div>
+                <div class="row justify-content-between summery-data-frame mt-2">
+                    <div class="col-5 summery-data-title">
+                        Choosen Person :
+                    </div>
+                    <div class="col-7">
+                        {{summeryModel.tableData.name}}
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-2">
+                    <button [routerLink]="['/upload-image']" class="btn btn-primary">Start Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

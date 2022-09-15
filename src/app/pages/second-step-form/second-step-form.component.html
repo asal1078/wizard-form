@@ -1,0 +1,58 @@
+<p-toast position="bottom-right"></p-toast>
+
+<div class="container">
+
+  <div class="row justify-content-center">
+    <label for="exampleFormControlInput1" class="form-label">
+      *Phone Number
+    </label>
+    <input
+      type="tel"
+      class="form-control"
+      id="exampleFormControlInput1"
+      [(ngModel)]="secondStepModel.phoneNumber"/>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+    <label for="exampleFormControlInput1" class="form-label">
+      *Source Of Fund
+    </label>
+    <input
+      type="tel"
+      class="form-control"
+      id="exampleFormControlInput1"
+      [(ngModel)]="secondStepModel.sourceOfFund"/>
+  </div>
+
+  <div class="row justify-content-center mt-4">
+
+    <div class="field col-6">
+      <h6>*Range</h6>
+      <p-calendar
+        [(ngModel)]="secondStepModel.range"
+        [minDate]="minDate"
+        [maxDate]="maxDate"
+        selectionMode="range"
+        [readonlyInput]="true"
+        inputId="range"
+        [showIcon]="true"></p-calendar>
+    </div>
+
+    <div class="field col-6">
+      <h6>*Status</h6>
+      <p-dropdown
+        [options]="Statuses"
+        [(ngModel)]="secondStepModel.status"
+        optionLabel="lable"></p-dropdown>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <button class="btn btn-primary" (click)="goToThirdStep()">
+      Go To Table
+    </button>
+  </div>
+</div>

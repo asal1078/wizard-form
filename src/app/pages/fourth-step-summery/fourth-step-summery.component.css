@@ -1,0 +1,15 @@
+.summery-image {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+
+.summery-data-frame {
+    padding: 10px;
+    background-color: rgb(227, 241, 255);
+    border-radius: 10px;
+}
+
+.summery-data-title {
+    color: gray;
+    font-size: small;
+}
